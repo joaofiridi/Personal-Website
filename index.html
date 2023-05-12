@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joao Diogo Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9637fdede.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+            <nav>
+                <img src="resources/logo.png.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">.home</a></li>
+                    <li><a href="#about">.about</a></li>
+                    <li><a href="#services">.services</a></li>
+                    <li><a href="#portfolio">.portfolio</a></li>
+                    <li><a href="#contact">.contacts</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Junior Software Developer</p>
+                <h1>Welcome to my website! <br> My name is <span> João</span> </h1>
+            </div>
+       </div>
+    </div>
+<!----------------------------------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="resources/me.png.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">.aboutMe</h1>
+                <p> My name is Joao and I’m 27 years old, and I'm now looking for my first job in the IT sector after completing a full stack developer boot camp where I mostly studied Java, Html, CSS, and JavaScript. <br>
+                    I promote teamwork and I’m a skilled communicator. I pride myself on being a quick learner, therefore I'm not searching for a specific position or language; instead, I'm trying to develop professionally. <br>
+                    In addition to coding, I enjoy watching sports, like the NBA or football, watching TV shows and movies, and going on trips. I enjoy travelling a lot.
+                    </p>
+                    <div class="table-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">.skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">.experience</p>
+                        <p class="tab-links"onclick="opentab('education')">.education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Design Web & applications</li>
+                            <li><span>HTML</span><br>Design Web</li>
+                            <li><span>CSS</span><br>Design Web</li>
+                            <li><span>JavaScript</span><br>Design Web</li>
+                            <li><span>mySQL</span><br>Connections using Spring</li>
+                            <li><span>MVC</span><br>Designing software // Scrum methodology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - </span><br>.still looking for my first challange in the IT world</li>
+                            <li><span>2018-2022</span><br>Bellboy & front desk at <a href="https://www.hoteldostemplarios.com/" target="_blank"> Hotel dos Templarios</a> </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>code cadet at <a href="https://www.academiadecodigo.org/" target="_blank"> academiadecodigo.org</a></li>
+                           
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">.myServices</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-camera"></i>
+                <h2>My photo gallery Website</h2>
+                <p></p>
+                <a href="#" target="_blank"> Not ready yet  </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Public GitLab</h2>
+                <p>Check out my public GitLab with a few cool projects</p>
+                <a href="https://gitlab.com/joaofiridi" target="_blank"> My GitLab </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>SpongeBoi game</h2>
+                <p>Download a fantastic game and play it for free!</p>
+                <a href="https://ruigodinho90.itch.io/spongeboi" target="_blank"> Download here </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">.myWork</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="resources/phone.png.png">
+                <div class="layer">
+                    <h2>My personal Website</h2>
+                    <p>Check out the code of this Website</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-pen-to-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/coding2.jpg">
+                <div class="layer">
+                    <h2>JavaBank</h2>
+                    <p>A two-month project that involved creating a fictional bank and making use of Java, Spring, mySQL connections, and many more tools </p>
+                    <a href="https://gitlab.com/joaofiridi/my-javabank"target="_blank"><i class="fa-solid fa-coins"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/ny.jpg">
+                <div class="layer">
+                    <h2>My photo gallery Website!</h2>
+                    <p>In construction..</p>
+                    <a href="#"target="_blank"><i class="fa-solid fa-image"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://gitlab.com/joaofiridi" target="_blank" class="btn">My GitLab</a>
+    </div>
+</div>
+<!----------------------------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">.contactMe</h1>
+                <p><i class="fa-solid fa-envelope"></i> joaofiridi@hotmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +351 912 424 756 </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/joaofrdiogo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/joaofiridi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/joaofiridi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://gitlab.com/joaofiridi" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
+                </div>
+                <a href="resources/Joao cv.pdf" download class="btn btn2">.downloadCV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                     <input type="text" name="Name" placeholder=".name" required>
+                     <input type="email" name="Email" placeholder=".email" required>
+                     <textarea name="Message"  rows="6" placeholder=".message"></textarea>   
+                     <button type="submit" class="btn btn2">.submit</button>
+                </form> 
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kevin.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwp-8YoIxVuotmiyYR9SYFWgRZLR9RgB3zHC1-4fjrR4Rr7E0g9Al0mcDK5YLs_Y4o85w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Im sorry im still trying to link google sheet with the website :("
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
